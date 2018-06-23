@@ -11,6 +11,10 @@
 		15360FE820DDB56C0086510D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15360FE720DDB56C0086510D /* ViewController.swift */; };
 		15360FEA20DDB56C0086510D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15360FE920DDB56C0086510D /* Assets.xcassets */; };
 		15360FED20DDB56C0086510D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15360FEB20DDB56C0086510D /* Main.storyboard */; };
+		15360FF420DDB7080086510D /* Pods_TwitterGram.framework in Sources */ = {isa = PBXBuildFile; fileRef = 8754578E4B87880B31C7414B /* Pods_TwitterGram.framework */; };
+		15360FF720DEFB660086510D /* TwitterGramItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15360FF520DEFB660086510D /* TwitterGramItem.swift */; };
+		15360FF820DEFB660086510D /* TwitterGramItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15360FF620DEFB660086510D /* TwitterGramItem.xib */; };
+		C3406E8471E0CD95521C6CC4 /* Pods_TwitterGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8754578E4B87880B31C7414B /* Pods_TwitterGram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,11 @@
 		15360FE920DDB56C0086510D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15360FEC20DDB56C0086510D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15360FEE20DDB56C0086510D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15360FF520DEFB660086510D /* TwitterGramItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterGramItem.swift; sourceTree = "<group>"; };
+		15360FF620DEFB660086510D /* TwitterGramItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterGramItem.xib; sourceTree = "<group>"; };
+		3AD86A2054BFD8092D289C24 /* Pods-TwitterGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterGram/Pods-TwitterGram.debug.xcconfig"; sourceTree = "<group>"; };
+		69CB2C62FF07799AF1C8F285 /* Pods-TwitterGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterGram/Pods-TwitterGram.release.xcconfig"; sourceTree = "<group>"; };
+		8754578E4B87880B31C7414B /* Pods_TwitterGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3406E8471E0CD95521C6CC4 /* Pods_TwitterGram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01BA581FD5A50B86A50F88D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8754578E4B87880B31C7414B /* Pods_TwitterGram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		15360FD920DDB56C0086510D = {
 			isa = PBXGroup;
 			children = (
 				15360FE420DDB56C0086510D /* TwitterGram */,
 				15360FE320DDB56C0086510D /* Products */,
+				17C651DF01E10AC47F1332BB /* Pods */,
+				01BA581FD5A50B86A50F88D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +74,22 @@
 			children = (
 				15360FE520DDB56C0086510D /* AppDelegate.swift */,
 				15360FE720DDB56C0086510D /* ViewController.swift */,
+				15360FF520DEFB660086510D /* TwitterGramItem.swift */,
+				15360FF620DEFB660086510D /* TwitterGramItem.xib */,
 				15360FE920DDB56C0086510D /* Assets.xcassets */,
 				15360FEB20DDB56C0086510D /* Main.storyboard */,
 				15360FEE20DDB56C0086510D /* Info.plist */,
 			);
 			path = TwitterGram;
+			sourceTree = "<group>";
+		};
+		17C651DF01E10AC47F1332BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AD86A2054BFD8092D289C24 /* Pods-TwitterGram.debug.xcconfig */,
+				69CB2C62FF07799AF1C8F285 /* Pods-TwitterGram.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15360FF120DDB56C0086510D /* Build configuration list for PBXNativeTarget "TwitterGram" */;
 			buildPhases = (
+				6E1760325FF3AC6D002FF8B0 /* [CP] Check Pods Manifest.lock */,
 				15360FDE20DDB56C0086510D /* Sources */,
 				15360FDF20DDB56C0086510D /* Frameworks */,
 				15360FE020DDB56C0086510D /* Resources */,
+				F40C0BA712F68EF29D88B139 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,17 +155,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				15360FEA20DDB56C0086510D /* Assets.xcassets in Resources */,
+				15360FF820DEFB660086510D /* TwitterGramItem.xib in Resources */,
 				15360FED20DDB56C0086510D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E1760325FF3AC6D002FF8B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitterGram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F40C0BA712F68EF29D88B139 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwitterGram/Pods-TwitterGram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitterGram/Pods-TwitterGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15360FDE20DDB56C0086510D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15360FF420DDB7080086510D /* Pods_TwitterGram.framework in Sources */,
+				15360FF720DEFB660086510D /* TwitterGramItem.swift in Sources */,
 				15360FE820DDB56C0086510D /* ViewController.swift in Sources */,
 				15360FE620DDB56C0086510D /* AppDelegate.swift in Sources */,
 			);
@@ -246,29 +325,35 @@
 		};
 		15360FF220DDB56C0086510D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD86A2054BFD8092D289C24 /* Pods-TwitterGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CFF46R89P9;
 				INFOPLIST_FILE = TwitterGram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmatters.evo.TwitterGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				"VALID_ARCHS[sdk=macosx*]" = "i386 x86_64";
 			};
 			name = Debug;
 		};
 		15360FF320DDB56C0086510D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CB2C62FF07799AF1C8F285 /* Pods-TwitterGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CFF46R89P9;
 				INFOPLIST_FILE = TwitterGram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xmatters.evo.TwitterGram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				"VALID_ARCHS[sdk=macosx*]" = "i386 x86_64";
 			};
 			name = Release;
 		};
@@ -291,6 +376,7 @@
 				15360FF320DDB56C0086510D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
